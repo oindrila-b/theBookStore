@@ -7,7 +7,12 @@ class UserInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text("User")),
+      appBar: AppBar(
+        centerTitle: false,
+        titleSpacing: 0.0,
+      ),
+      body: Center(
+          child: Text("User Info")),
     );
   }
 }

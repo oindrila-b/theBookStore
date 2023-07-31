@@ -118,7 +118,7 @@ class BookDetail extends StatelessWidget {
                                   ],
                                 ),
                                 SizedBox(
-                                  width: 12,
+                                  width: 15,
                                 ),
                               ],
                             ),
