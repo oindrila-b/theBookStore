@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thebookstore/screens/AllBooks.dart';
 import 'package:thebookstore/screens/HomeCarousel.dart';
-import 'package:thebookstore/screens/UserInfo.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import '../screens/AppInfo.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,8 +17,6 @@ class _HomePageState extends State<HomePage> {
   final pages = [
     const HomeCarousel(),
     const AllBooks(),
-    const UserInfo(),
-    const AppInfo()
   ];
 
   @override
@@ -37,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           color: Color(0xFF322653),
         ),
         child:  Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
+          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 15.0),
           child: GNav(
             backgroundColor: Color(0xFF322653),
             color: Colors.white,
@@ -58,22 +53,6 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   setState(() {
                     pageIndex = 1;
-                  });
-                },
-              ),
-              GButton(icon: Icons.person,
-              text: "Profile",
-                onPressed: () {
-                  setState(() {
-                    pageIndex = 2;
-                  });
-                },
-              ),
-              GButton(icon: Icons.info,
-                text: "App",
-                onPressed: () {
-                  setState(() {
-                    pageIndex = 3;
                   });
                 },
               ),
